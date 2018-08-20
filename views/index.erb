@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IRIS Dashboard</title>
+  </head>
+  <body>
+    <% unless flash[:message].nil? %>
+      <div>
+        <%= flash[:message] %>
+      </div>
+    <% end %>
+  <% if login? %>
+  <ul>
+    <li><a href='/logout'>Sign Out</a></li>
+  </ul>
+  <table>
+    <tr>
+      <td>username</td><td>email</td><td>image</td>
+    </tr>
+    <tr>
+      <td><%= user_name %></td><td><%= user_email %></td><td><img src="<%= user_image %>" style="width: 32px;"></img></td>
+    </tr>
+  </table>
+  <% else %>
+  <ul>
+    <li><a href='/auth/google_oauth2'>Sign in with Google</a></li>
+  </ul>
+
+  <% end %>
+  </body>
+</html>
