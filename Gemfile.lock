@@ -1,41 +1,41 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    faraday (0.12.2)
+    faraday (0.15.4)
       multipart-post (>= 1.2, < 3)
-    hashie (3.5.7)
-    jwt (1.5.6)
+    hashie (3.6.0)
+    jwt (2.1.0)
     multi_json (1.13.1)
     multi_xml (0.6.0)
     multipart-post (2.0.0)
-    mustermann (1.0.2)
-    oauth2 (1.4.0)
-      faraday (>= 0.8, < 0.13)
-      jwt (~> 1.0)
+    mustermann (1.0.3)
+    oauth2 (1.4.1)
+      faraday (>= 0.8, < 0.16.0)
+      jwt (>= 1.0, < 3.0)
       multi_json (~> 1.3)
       multi_xml (~> 0.5)
       rack (>= 1.2, < 3)
-    omniauth (1.8.1)
-      hashie (>= 3.4.6, < 3.6.0)
+    omniauth (1.9.0)
+      hashie (>= 3.4.6, < 3.7.0)
       rack (>= 1.6.2, < 3)
-    omniauth-google-oauth2 (0.5.3)
-      jwt (>= 1.5)
+    omniauth-google-oauth2 (0.6.1)
+      jwt (>= 2.0)
       omniauth (>= 1.1.1)
       omniauth-oauth2 (>= 1.5)
-    omniauth-oauth2 (1.5.0)
+    omniauth-oauth2 (1.6.0)
       oauth2 (~> 1.1)
-      omniauth (~> 1.2)
-    rack (2.0.5)
+      omniauth (~> 1.9)
+    rack (2.0.7)
     rack-flash3 (1.0.5)
       rack
-    rack-protection (2.0.3)
+    rack-protection (2.0.5)
       rack
-    sinatra (2.0.3)
+    sinatra (2.0.5)
       mustermann (~> 1.0)
       rack (~> 2.0)
-      rack-protection (= 2.0.3)
+      rack-protection (= 2.0.5)
       tilt (~> 2.0)
-    tilt (2.0.8)
+    tilt (2.0.9)
 
 PLATFORMS
   ruby
@@ -43,8 +43,9 @@ PLATFORMS
 DEPENDENCIES
   omniauth
   omniauth-google-oauth2
+  rack (>= 2.0.6)
   rack-flash3
   sinatra
 
 BUNDLED WITH
-   1.16.2
+   1.17.1
